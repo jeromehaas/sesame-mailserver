@@ -5,9 +5,6 @@ const PORT = 3005;
 const cors = require('cors');
 const router = require('./router');
 
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
-
 app.use(express.json());
 app.use(cors());
 app.use(router);
